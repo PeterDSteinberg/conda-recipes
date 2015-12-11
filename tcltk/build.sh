@@ -2,8 +2,8 @@
 
 VER=$PKG_VERSION
 
-curl "http://superb-dca2.dl.sourceforge.net/project/tcl/Tcl/${VER}/tcl${VER}-src.tar.gz" > tcl${VER}-src.tar.gz
-curl "http://superb-dca2.dl.sourceforge.net/project/tcl/Tcl/${VER}/tk${VER}-src.tar.gz" > tk${VER}-src.tar.gz
+curl -L -o tcl${VER}.tar.gz "http://sourceforge.net/projects/tcl/files/Tcl/${VER}/tcl${VER}-src.tar.gz/download"
+curl -L -o tk${VER}.tar.gz "http://sourceforge.net/projects/tcl/files/Tcl/${VER}/tk${VER}-src.tar.gz/download"
 
 tar xzf tcl${VER}-src.tar.gz
 tar xzf tk${VER}-src.tar.gz
